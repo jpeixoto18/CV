@@ -1,0 +1,140 @@
+/* General style */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+h4, h5 {
+    font-weight: 300;
+}
+
+.title {
+    font-size: 22px;
+    padding-top: 1rem;
+}
+
+p {
+    text-align: justify;
+    padding-top: 0.8rem;
+}
+
+.position  {
+    font-size: 18px;
+}
+
+.main-color {
+    color: #AF423F;
+}
+
+li {
+    list-style: none;
+}
+
+.img {
+    width: 150px;
+}
+
+.bold-text {
+    font-style: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.main-container {
+    flex: 5;
+    padding: 25px 30px;
+}
+
+.icon {
+    background-color: #AF423F;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+}
+
+.side-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+/* Bio */
+.bio h1 {
+    font-size: 47px;
+    font-weight: 600;
+} 
+
+.bio-box { 
+    display: flex;
+}
+
+.bio-box .bio-item {
+    padding-right: 5px;
+}
+
+/* Education */
+.experience .experience-list {
+    padding-left: 2px;
+}
+
+.education-post {
+    padding-bottom: 0.5rem;
+}
+
+/*  SIDE BAR */
+/* conferences */
+.conference-post {
+    margin-bottom: 5px;
+}
+
+.side-container  {
+    border-radius: 5px;
+    flex: 2;
+    margin-top: 20px;
+    padding: 25px 30px;
+    background-color: #f4f0e6;
+}
+
+.side-container ul {
+    padding-bottom: 10px;
+}
+
+.side-icon {
+    margin-bottom: 5px;
+}
+
+.side-container h3 {
+    padding-top: 8px;
+}
+
+/*  Media */
+@media print {
+    div {
+      break-inside: avoid;
+    }
+    @page { margin: 0; }
+  }
