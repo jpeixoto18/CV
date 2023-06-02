@@ -1,140 +1,180 @@
 /* General style */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    width: 21cm;
-    height: 29.7cm;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+  width: 21cm;
+  height: 29.7cm;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
 }
 
-h4, h5 {
-    font-weight: 300;
+h4,
+h5 {
+  font-weight: 300;
 }
 
 .title {
-    font-size: 22px;
-    padding-top: 1rem;
+  font-size: 17px;
+  padding-top: 0.45em;
+  margin-top: 0.3rem;
 }
 
 p {
-    text-align: justify;
-    padding-top: 0.8rem;
+  text-align: justify;
+  padding-top: 0.3rem;
 }
 
-.position  {
-    font-size: 18px;
+.position {
+  font-size: 12px;
 }
 
 .main-color {
-    color: #AF423F;
+  color: #AF423F;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .img {
-    width: 150px;
+  width: 105px;
 }
 
 .bold-text {
-    font-style: bold;
+  font-style: bold;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
 }
 
 .main-container {
-    flex: 5;
-    padding: 25px 30px;
+  flex: 5;
+  padding: 25px 30px;
 }
 
 .icon {
-    background-color: #AF423F;
-    color: #fff;
-    padding: 5px;
-    border-radius: 50%;
+  background-color: #AF423F;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-header {
+  padding-top: 0.4rem;
+}
+
+.multi-position {
+  margin-left: .2rem;
+  margin-top: 0.4rem;
+  padding-left: 0.5rem;
+  border-left: 1px dashed #AF423F;
+}
+
+.single-position {
+  margin-bottom: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 .side-flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: space-between;
-    padding-top: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+}
+
+/* Header */
+.header h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.header-box {
+  display: flex;
+}
+
+.header-box .header-item {
+  padding-right: 5px;
 }
 
 /* Bio */
-.bio h1 {
-    font-size: 47px;
-    font-weight: 600;
-} 
-
-.bio-box { 
-    display: flex;
-}
-
-.bio-box .bio-item {
-    padding-right: 5px;
+.bio .bio-list {
+  padding-left: 2px;
+  margin-top: 5px;
 }
 
 /* Education */
 .experience .experience-list {
-    padding-left: 2px;
+  padding-left: 2px;
 }
 
 .education-post {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Publication */
+.publications { padding-top: 0.5rem;} /* at the moment hardcoded because I couldn't figure out padding-top with @page
+
+/* Volunteering */
+.volunteering-post {
+  padding-bottom: 0.5rem;
+}
+
+.volunteering-post h2 {
+  font-size: 14px;
+}
+
+.volunteering-post img {
+  width: 65px;
 }
 
 /*  SIDE BAR */
 /* conferences */
 .conference-post {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.side-container  {
-    border-radius: 5px;
-    flex: 2;
-    margin-top: 20px;
-    padding: 25px 30px;
-    background-color: #f4f0e6;
+.side-container {
+  border-radius: 5px;
+  flex: 2;
+  margin-top: 20px;
+  padding: 25px 30px;
+  background-color: #f4f0e6;
 }
 
 .side-container ul {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .side-icon {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .side-container h3 {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 /*  Media */
 @media print {
-    div {
-      break-inside: avoid;
-    }
-    @page { margin: 0; }
+  div {
+    page-break-after: auto;
   }
+  hr { page-break-after: avoid; }
+  @page {margin:0;}
+}
