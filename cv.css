@@ -172,9 +172,13 @@ li {
 
 /*  Media */
 @media print {
-  div {
+  .main-container div {
     page-break-after: auto;
+    break-inside: avoid;
   }
-  hr { page-break-after: avoid; }
+  .side-container div { 
+    page-break-after: auto;
+    break-inside: avoid;
+  }
   @page {margin:0;}
 }
